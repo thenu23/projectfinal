@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(27, 27, 27);
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 100;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    gap: 40px;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* Hide scroll bar in Internet Explorer 10+ */
+    scrollbar-width: none;  /* Hide scroll bar in Firefox */
+}
+.navbar::-webkit-scrollbar { 
+    display: none;  /* Hide scroll bar in Safari and Chrome */
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #79eef2;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    list-style: none;
+    margin-top: 60px;
+}
+
+.search-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-box{
+    width: 30%;
+    padding: 10px 10px 10px 40px;
+    text-align: center;
+    border: 1px solid #555;
+    background: white url('./img/search.svg') no-repeat 13px center;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card{
+    background: #f0ece2;
+    border-radius: 30px;
+    border: 2px solid #79eef2;
+    width: 250px;
+    height: 230px;
+    margin: 10px;
+}
+
+.card-image{
+    height: 150px;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.card-content{
+    padding: 10px;
+}
+
+.img-1{
+    background-image: url(./img/ar.jpg);
+
+}
+
+.img-2{
+    background-image: url(./img/u1.png);
+}
+
+.img-3{
+    background-image: url(./img/vj-antony.jpg);
+}
+
+.img-4{
+    background-image: url(./img/pradeep.jpeg);
+}
